@@ -14,7 +14,7 @@ const toggleSelectRepository = (_, { id, isSelected }, { cache }) => {
     data: { selectedRepositoryIds },
   });
 
-  return { id, isSelected: !isSelected };
+  // return { id, isSelected: !isSelected };
 };
 
 const resolvers = { toggleSelectRepository };

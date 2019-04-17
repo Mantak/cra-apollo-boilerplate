@@ -6,6 +6,5 @@ import githubState from 'apollo/states/github/state';
 import githubResolvers from 'apollo/states/github/resolvers';
 
 export const stateCache = new InMemoryCache().restore(window.__APOLLO_STATE__);
-
 export const stateDefaults = { ...userState, ...githubState };
 export const stateResolvers = { ...userResolvers, ...githubResolvers };
