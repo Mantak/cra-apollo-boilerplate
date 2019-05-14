@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from 'scenes/Home';
+import Home from 'scenes/Home2';
 
 export default function Routes() {
   return (

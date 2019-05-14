@@ -2,6 +2,8 @@ import React from 'react';
 import { Query, Mutation } from 'react-apollo';
 import { GET_SELECTED_REPOSITORIES } from 'apollo/states/github/queries';
 import { SELECT_REPOSITORY } from 'apollo/states/github/mutations';
+import { Button } from 'antd';
+
 import './home.css';
 
 import { GET_REPOSITORIES_OF_ORGANIZATION } from 'apollo/graphql/github/queries';
@@ -62,6 +64,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Hello />
+      <Button type="primary">Button</Button>
       <Query query={GET_REPOSITORIES_OF_ORGANIZATION}>
         {({ data: { organization }, loading }) => {
           if (loading || !organization) {

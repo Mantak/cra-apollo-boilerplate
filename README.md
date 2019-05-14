@@ -1,8 +1,12 @@
-yarn create react-app yidu_client
+yarn create react-app my_app_name
 
+# 定制一下cra，没有提供less module
 yarn add --dev react-app-rewired customize-cra @babel/plugin-proposal-decorators
+yarn add --dev babel-plugin-import less less-loader
 
-yarn add react-router-dom
+yarn add
+  antd
+  react-router-dom
 
 yarn add
   react-apollo
